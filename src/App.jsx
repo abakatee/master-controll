@@ -29,7 +29,7 @@ const addTransaction = event =>{
   const newTransaction = {
     id:1,name:inputName,value: parseInt(inputValue)
   }
-  setDummyTransactions(dummyTransactions => [...dummyTransactions,newTransaction])
+  setDummyTransactions(dummyTransactions => [newTransaction,...dummyTransactions,])
   setInputName("")
   setInputValue("")
 }
